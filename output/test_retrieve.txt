@@ -1,0 +1,5 @@
+ID|product molecule|decomposition reaction|retrieved reactants
+39|O=C(CCc1ccccc1)Oc1c(Br)cc(Br)cc1Br|Ester_formation_Acid_Chloride|O=C(Cl)CCc1ccccc1.Oc1c(Br)cc(Br)cc1Br
+85|O=C(Nc1cc2c(cc1Br)OCCO2)C1CCCC1|Amide_formation_acid_chloride|O=C(Cl)C1CCCC1.Nc1cc2c(cc1Br)OCCO2
+90|O=C(Nc1cc2c(cc1Br)OCCO2)c1ccc(N2CCOCC2)nc1|Amide_formation_acid_chloride|O=C(Cl)c1ccc(N2CCOCC2)nc1.Nc1cc2c(cc1Br)OCCO2
+94|O=C(OCc1cc2c(cc1Br)OCO2)c1ccco1|Ester_formation_Acid_Chloride|O=C(Cl)c1ccco1.OCc1cc2c(cc1Br)OCO2
