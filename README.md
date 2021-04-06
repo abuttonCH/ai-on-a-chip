@@ -17,12 +17,11 @@ In this repository, you will find useful data and code to reproduce the results 
 
 The input data is located in [data](/data). The folder contains the following files:
 
-* LSTM_pretraining_data.zip: Contains the SMILES of the compounds used for pretraining the LSTM model.
-* data_tr.txt: LSTM pretraining data used for training.
-* decomposition_reactions.txt: Reaction SMARTS used to convert the molecules into their corresponding reactants.
-* LSTM_FLOW-MOL_DB_DATA.npy: Molecular database of commercially available molecules. Each entry contains the number of molecule, the molecular SMILES, and the molecular weight is stored. The numpy array object is too large upload to git.
-* mol_db_data.csv: Molecular database stored as a csv file. This file needs to be converted to the corresponding numpy array object in order to work with decompose.py and retrieve_bb.py.
-* create_npy_db.py: Script for converting the csv file into the numpy array object. 
+* *LSTM_pretraining_data.zip*: Contains the SMILES of the compounds used for pretraining the LSTM model.
+* *decomposition_reactions.txt*: Reaction SMARTS used to convert the molecules into their corresponding reactants.
+* *LSTM_FLOW-MOL_DB_DATA.npy*: Molecular database of commercially available molecules. Each entry contains the number of molecule, the molecular SMILES, and the molecular weight is stored. The numpy array object is too large upload to git.
+* *mol_db_data.csv*: Molecular database stored as a csv file. This file needs to be converted to the corresponding numpy array object in order to work with decompose.py and retrieve_bb.py.
+* *create_npy_db.py*: Script for converting the csv file into the numpy array object. 
 
 ## Virtual reaction filter <a name="code"></a>
 
