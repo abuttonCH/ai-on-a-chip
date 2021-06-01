@@ -111,8 +111,8 @@ python code/retrieve_bb.py --decomp output/test_decomp.txt --mol_db data/LSTM_FL
 ## Generative deep learning code <a name="ai"></a>
 
 The code used for molecule generation can be found in the dedicated repository: [ETHmodlab/virtual_libraries](https://github.com/ETHmodlab/virtual_libraries). To repeat our fine-tuning experiment and generate molecules, you can follow the instructions there and:
-1. Replace the [parameters file](https://github.com/ETHmodlab/virtual_libraries/blob/master/experiments/parameters.ini) by the one provided [here](https://github.com/abuttonCH/ai-on-a-chip/models/parameters.ini) 
-2. Modify the path in the new parameters file to point toward the right data (provided [here](https://github.com/abuttonCH/ai-on-a-chip/data/fine_tuning_data.txt)) and to the right pretrained CLM (provided [here](https://github.com/abuttonCH/ai-on-a-chip/models/pretrained_CLM.h5))
+1. Replace the [parameters file](https://github.com/ETHmodlab/virtual_libraries/blob/master/experiments/parameters.ini) by the one provided [here](https://github.com/abuttonCH/ai-on-a-chip/blob/main/models/parameters.ini) 
+2. Modify the path in the new parameters file to point toward the right data (provided [here](https://github.com/abuttonCH/ai-on-a-chip/blob/main/data/fine_tuning_data.txt)) and to the right pretrained CLM (provided [here](https://github.com/abuttonCH/ai-on-a-chip/blob/main/models/pretrained_CLM.h5))
 
 ## How to cite <a name="cite"></a>
 
