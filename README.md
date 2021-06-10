@@ -1,10 +1,11 @@
 # Combining generative artificial intelligence and on-chip synthesis for de novo drug design
 
-In this repository, you will find data and code associated with the study
-**Combining Generative Artificial Intelligence and On-Chip Synthesis for De Novo Drug Design**, in which de novo design based on Long Short-Term Memory network was combined with a microfluidics platform, see [Grisoni, Huisman *et al.* 2020](https://chemrxiv.org/articles/preprint/Combining_Generative_Artificial_Intelligence_and_On-Chip_Synthesis_for_De_Novo_Drug_Design/13498587).
+In this repository, you will find data and code associated with the study:
+**"Combining Generative Artificial Intelligence and On-Chip Synthesis for De Novo Drug Design"**, in which a Long Short-Term Memory network was combined with a microfluidics platform to design novel bioactive compounds, see [Grisoni, Huisman *et al.* 2020](https://chemrxiv.org/articles/preprint/Combining_Generative_Artificial_Intelligence_and_On-Chip_Synthesis_for_De_Novo_Drug_Design/13498587).
 In this repository, you will find useful data and code to reproduce the results of our study.
 
-1. [Data](#data)
+1. [Getting started](#start)
+2. [Data](#data)
 3. [Virtual reaction filter code](#code)
     1. [Installation](#install)
     2. [Usage](#usage)
@@ -12,7 +13,13 @@ In this repository, you will find useful data and code to reproduce the results 
 4. [Generative deep learning code](#ai)
 5. [How to cite](#cite)
 
+## Getting started <a name="start"></a>
 
+To access the content of this repository on your local machine, you can clone it as follows:
+
+```bash
+git@github.com:abuttonCH/ai-on-a-chip.git
+```
 ## Data <a name="data"></a>
 
 The input data is located in [data](/data). The folder contains the following files:
@@ -21,19 +28,12 @@ The input data is located in [data](/data). The folder contains the following fi
 * *decomposition_reactions.txt*: Reaction SMARTS used to convert the molecules into their corresponding reactants.
 * *LSTM_FLOW-MOL_DB_DATA.npy*: Molecular database of commercially available molecules. Each entry contains the number of molecule, the molecular SMILES, and the molecular weight is stored. The numpy array object is too large upload to git.
 * *mol_db_data.csv*: Molecular database stored as a csv file. This file needs to be converted to the corresponding numpy array object in order to work with decompose.py and retrieve_bb.py.
-* *create_npy_db.py*: Script for converting the csv file into the numpy array object. 
 
 ## Virtual reaction filter <a name="code"></a>
 
 The retro-synthesis is performed in two steps. In the first step, a series of reactions are applied to each product molecule in order to decompose it in to its corresponding reactants (decompose.py). The reaction used and the reactant molecules are stored as a text file. Once all of the products have been decomposed, the reactant molecules are then compared against a database of known, commercially available molecules. If all of the reactant molecules for a given reaction can be found within the database, the product molecule along with the reaction and the retrieved reactants molecules are stored in the output file.
 
 ### Installation <a name="install"></a>
-
-To access the code, first clone the git repository
-
-```bash
-git@github.com:abuttonCH/ai-on-a-chip.git
-```
 
 This code requires rdkit version 2018.09.1 to be installed. The best way to do this is to create a conda environment. 
 ```bash
