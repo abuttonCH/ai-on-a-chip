@@ -122,12 +122,10 @@ If you use any data or scripts associated to this repo, please cite:
 @article{grisoni2020,
   title         = {Combining generative artificial intelligence and on-chip synthesis for de novo drug design},
   author        = {Grisoni, Francesca and Huisman, Berend and Button, Alex and Moret, Michael and Atz, Kenneth and Merk, Daniel and Schneider, Gisbert},
-  journal       = {ChemRXiv},
-  volume        = {},
-  number        = {},
-  pages         = {}, 
-  year          = {2020},
-  doi           = {10.26434/chemrxiv.13498587.v1},
-  url           = {https://doi.org/10.26434/chemrxiv.13498587.v1},
+  journal       = {Science Advances},
+  volume        = {7},
+  pages         = {eabg3338}, 
+  year          = {2021},
+  doi           = {10.1126/sciadv.abg3338},
  publisher      = {}
 ```
