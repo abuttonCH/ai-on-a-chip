@@ -53,6 +53,7 @@ The folder contains the following files:
 * *retrieve_bb.py* (returns reactants found in mol db)
 * *reaction_library.py* (defines the reaction object)
 *  *reaction_class_auto.py* (performs the reaction)
+Below, you will find a step-by-step explanation on how to use the code.
 
 #### Create the Molecular DB
 Before running the method, one first needs to create the mol db numpy array object:
