@@ -32,7 +32,7 @@ The retro-synthesis is performed in two steps. In the first step, a series of re
 To access the code, first clone the git repository
 
 ```bash
-git clone git@github.com:abuttonCH/retro-retrieval.git
+git@github.com:abuttonCH/ai-on-a-chip.git
 ```
 
 This code requires rdkit version 2018.09.1 to be installed. The best way to do this is to create a conda environment. 
