@@ -22,16 +22,15 @@ git@github.com:abuttonCH/ai-on-a-chip.git
 ```
 ## Data <a name="data"></a>
 
-The input data is located in [data](/data). The folder contains the following files:
-
-* *LSTM_pretraining_data.zip*: Contains the SMILES of the compounds used for pretraining the LSTM model.
+This repository contains different types of datasets that are linked to our publication. Such datasets are located in [data](/data). In particular, the folder contains the following files:
+* *LSTM_pretraining_data.zip*: Contains the SMILES of the compounds used for pretraining the LSTM model. Such SMILES were obtained from a library of commercial compounds, which were retained by our virtual reaction filter (see [below](#code))
 * *decomposition_reactions.txt*: Reaction SMARTS used to convert the molecules into their corresponding reactants.
-* *LSTM_FLOW-MOL_DB_DATA.npy*: Molecular database of commercially available molecules. Each entry contains the number of molecule, the molecular SMILES, and the molecular weight is stored. The numpy array object is too large upload to git.
-* *mol_db_data.csv*: Molecular database stored as a csv file. This file needs to be converted to the corresponding numpy array object in order to work with decompose.py and retrieve_bb.py.
+* *LSTM_FLOW-MOL_DB_DATA.npy*: Molecular database of commercially available molecules. Each entry contains the number of molecule, the molecular SMILES, and the molecular weight is stored. The numpy array object is too large to upload to git. See the [virtual reaction](#code) section to understand how to use this file.
+* *mol_db_data.csv*: Molecular database stored as a csv file. This file needs to be converted to the corresponding numpy array object in order to work with decompose.py and retrieve_bb.py (see [below](#code)).
 
 ## Virtual reaction filter <a name="code"></a>
 
-The retro-synthesis is performed in two steps. In the first step, a series of reactions are applied to each product molecule in order to decompose it in to its corresponding reactants (decompose.py). The reaction used and the reactant molecules are stored as a text file. Once all of the products have been decomposed, the reactant molecules are then compared against a database of known, commercially available molecules. If all of the reactant molecules for a given reaction can be found within the database, the product molecule along with the reaction and the retrieved reactants molecules are stored in the output file.
+Here you will find instructions to apply the virtual reaction filter, as explained in the paper. The retro-synthesis is performed in two steps. In the first step, a series of reactions are applied to each product molecule in order to decompose it in to its corresponding reactants (decompose.py). The reaction used and the reactant molecules are stored as a text file. Once all of the products have been decomposed, the reactant molecules are then compared against a database of known, commercially available molecules. If all of the reactant molecules for a given reaction can be found within the database, the product molecule along with the reaction and the retrieved reactants molecules are stored in the output file.
 
 ### Installation <a name="install"></a>
 
