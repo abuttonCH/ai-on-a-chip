@@ -94,7 +94,7 @@ python retrieve_bb.py --decomp decomposition_output.txt --mol_db molecular_datab
 
 ```--out```: The file path specifying where to write the outputs to. **string**
 
-## Example <a name="example"></a>
+### Example <a name="example"></a>
 Examples of running decompose.py and retrieve_bb.py. All files have been provided except for the molecular_database file (LSTM_FLOW-MOL_DB_DATA.npy) as it was too large. LSTM_FLOW-MOL_DB_DATA.npy has been provided in the supplementary information of "Combining generative artificial intelligence and on-chip synthesis for de novo drug design".
 
 ```python
